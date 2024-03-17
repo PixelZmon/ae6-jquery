@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+  <!-- Opcional: CSS de Bootstrap para DataTables -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap5.min.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+  <!--Link de css de bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--Fancybox-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+  <!--Para el video-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <title>TeLoVendo</title>
+  </head>
+  <body class="site bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark-subtle fs-5 text-light" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand fs-2" href="index.html">TeLoVendoCL</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>        
+    </header>
+    <main class="site-content bg-white">
+      <section class="site-content container">
+        <h1 class="text-center mt-4 mb-4">Formulario de contacto</h1>
+  
+        <form id="fomulario-de-contacto" class="miFormulario">
+  
+          <div class="mb-3 fs-5">
+            <label for="nombre" class="form-label">Nombre: </label>
+            <input type="text"  class="form-control fs-5" id="nombre" />
+  
+            <div id="errorNombre" class="invalid-feedback"></div>
+          </div>
+  
+          <div class="mb-3 fs-5">
+            <label for="email" class="form-label">Correo Electrónico: </label>
+            <input type="email"  class="form-control fs-5" id="email" />
+  
+            <div id="errorEmail" class="invalid-feedback"></div>
+          </div>
+  
+          <div class="mb-3 fs-5">
+            <label for="motivo" class="form-label">Motivo del contacto: </label>
+            <input type="text"  class="form-control fs-5" id="motivo" />
+            
+            <div id="errorMotivo" class="invalid-feedback"></div>
+          </div>
+
+          <div class="mb-3 fs-5" >
+            <label for="mensaje" class="form-label">Mensaje: </label>
+            <textarea class="form-control fs-5" id="mensaje"></textarea>
+            
+            <div id="errorArea" class="invalid-feedback"></div>
+          </div>
+  
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+       </section>
+       <section class="container mt-4">
+        <table id="infoTable" class="table table-striped" >
+          <thead>
+              <tr>
+                  <th>Producto</th>
+                  <th>Código</th>
+                  <th>Stock</th>
+                  <th>Valor</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Drone 4k Dron Profesional Camara Wifi Fpv 998 Pro</td>
+                  <td>5qZd@t-PFW?NVh</td>
+                  <td>10</td>
+                  <td>$33.990</td>
+
+              </tr>
+              <tr>
+                  <td>Desktop gamer - Intel core i9, Nvidia RTX 4090, 64gb, 512 ssd, refrigeración líquida desde $1.990.000</td>
+                  <td>gTyQfTkgn6fVZ86</td>
+                  <td>3</td>
+                  <td>$1.990.000</td>
+              </tr>
+              <tr>
+                <td>Samsung Galaxy S24 Ultra 5G 12gb 256gb</td>
+                <td>kf-2gNkbBQPa!</td>
+                <td>5</td>
+                <td>$2.999.990</td>
+              </tr>
+              <tr>
+                <td>Kindle Touch 16GB (11a Generación) negro, + regalo funda diseño</td>
+                <td>eM##Q*f5*dCZhT</td>
+                <td>15</td>
+                <td>$179.990</td>
+              </tr>
+              <tr>
+                <td>Celular Motorola Edge 40 256GB 6,55 Azul Nebula Liberado</td>
+                <td>7vfTC-ZB-;4@YGz</td>
+                <td>2</td>
+                <td>$299.990</td>
+              </tr>
+              <tr>
+                <td>Apple Vision Pro</td>
+                <td>cz[uzPzj:;y0uPj</td>
+                <td>2</td>
+                <td>$5.999.990</td>
+              </tr>
+              <tr>
+                <td>Proyector Epson PowerLite FH52+ 4000 lúmenes 3LCD Full HD</td>
+                <td>avEwyk71:YhJKYG</td>
+                <td>4</td>
+                <td>$1.999.990</td>
+              </tr>
+              <tr>
+                <td>Microscopio Binocular Labquimed Modelo B2, 40x-1000x, Siedentopf, Led 3W, Educacional, Veterinario, Laboratorio</td>
+                <td>aK%%C6*j%Z6%YBF</td>
+                <td>23</td>
+                <td>$399.990</td>
+              </tr>
+              <tr>
+                <td>LG StanByME Go 27 pulgadas Portátil Smart TV con ThinQ AI</td>
+                <td>RUVjU9H64Lta8=</td>
+                <td>6</td>
+                <td>$899.990</td>
+              </tr>
+              <tr>
+                <td>JBL Partybox 310</td>
+                <td>@0mAYtm9=Xaf.k</td>
+                <td>4</td>
+                <td>$499.990</td>
+              </tr>
+              <tr>
+                <td>AMESTI ESTUFA PELLET AMESTI MODELO ITALY 8100 ROJO</td>
+                <td>?aF%+n[_A&/P]d]</td>
+                <td>5</td>
+                <td>$999.990</td>
+              </tr>
+              <tr>
+                <td>REFRIGERADOR SIDE BY SIDE 467 LTS 4 PUERTAS HQ-627WEN</td>
+                <td>@VF=YY1/pVEJPWR</td>
+                <td>7</td>
+                <td>$539.990</td>
+              </tr>
+            </tbody>
+        </table>
+       </section>
+      <section>
+        <h2 class="text-center mt-4">!OFERTA DEL DÍA!</h2>
+        <h3 class="text-center">Desktop gamer - Intel core i9, Nvidia RTX 4090, 64gb, 512 ssd, refrigeración líquida</h3>
+        <img class="rounded mx-auto d-block"" src="https://cdnx.jumpseller.com/compuelite/image/43786947/thumb/610/610?1705599369" href="#" alt="Imagen del producto"></img>
+      </section>
+    </main>
+    <footer class = "footer text-center mt-4 p-1 bg-dark-subtle text-light fs-6" data-bs-theme="dark">
+      <p class="rights mt-2">&copy; Empresa "X"</p>
+      <p class="correo">Contacto: <a class="text-white" href="#">empresax@ventas.cl</a> o en el siguiente <a class="text-white" href="contacto.html">formulario</a></p>
+      <p>Equipo: Sebastián Ñanculao. Grupo: Entertaining Developmentt</p>
+      <p>Las Condes 117 piso 999. Santiago, Chile</p>
+      <a data-fancybox href="https://www.google.com/maps/search/?api=1&query=-36.82665111228271%2C-73.04962795145843"><button id="various" class="fancybox various btn p-0 mb-2" type="button" >Nuestras oficinas</button></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <!-- Opcional: JS de Bootstrap para DataTables -->
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap5.min.js"></script>
+    <script src="js/tabla.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Fancybox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!--Scripts para el video-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/video.js"></script>
+    <!--Script para el mapa-->
+    <!--script src="js/mapa.js"></script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+</html>
